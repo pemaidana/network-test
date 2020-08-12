@@ -8,7 +8,7 @@
   tasks:
     - name: Read Configuration from Boxes
       cli_command:
-        command: "{{ tower_input | default('')}}"
+        command: show run
       when: ansible_network_os is defined
       register: output
 
